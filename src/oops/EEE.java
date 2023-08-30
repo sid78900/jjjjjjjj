@@ -5,13 +5,14 @@ public class EEE {
 	String name;
    final int c =11;
 	
-	public void setName(String b) {
-		this.a=5;
-		this.name=b;
-		System.out.println(c);
-		System.out.println(a);
-	}
-	public Object getName() {
-		return name;
-	}
+public void setname(String z) {
+	this.name=z;
+	this.a=10;
+	System.out.println(a);
+	System.out.println(c);
+	
+}
+public Object get() {
+	return name;
+}
 }

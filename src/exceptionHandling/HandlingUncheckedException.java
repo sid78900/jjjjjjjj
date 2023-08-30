@@ -3,7 +3,7 @@ package exceptionHandling;
 public class HandlingUncheckedException {
 	public static void main(String[] args) {
 		int a=5;
-		
+		//airthmetic
 		try {
 			System.out.println(a/0);
 		} catch (ArithmeticException e) {
@@ -11,6 +11,8 @@ public class HandlingUncheckedException {
 			e.printStackTrace();
 		}
 		System.out.println("hi");
-	}
+		
+		
+				}
 
 }

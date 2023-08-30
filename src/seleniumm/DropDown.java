@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
 public class DropDown {
-public static void main(String[] args) {
+public static void main(String[] args) throws Exception {
 	System.setProperty("webdriver.chrome.driver", "C:\\Users\\DELL\\Desktop\\sid\\chromedriver_win32\\chromedriver.exe");
 	WebDriver driver = new ChromeDriver();
 	driver.manage().window().maximize();
@@ -17,8 +17,11 @@ public static void main(String[] args) {
 	driver.get("https://www.facebook.com/signup");
 	
 	List<WebElement> drop = driver.findElements(By.xpath("//select[@id='month']/option"));
-	System.out.println(drop.get(2).isEnabled());
-	drop.get(3).click();
+	System.out.println(drop.get(10).isEnabled());
+	drop.get(10).click();
+	Thread.sleep(3000);
+	
+	
 	
 	//Recommend
 	WebElement bm = driver.findElement(By.xpath("//select[@id='month']"));

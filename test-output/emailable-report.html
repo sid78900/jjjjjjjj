@@ -8,113 +8,106 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">5,993</td><td></td><td></td></tr>
+<tr><th colspan="8">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">1,085</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">grid.Grid1</td><td><a href="#m0">hk</a></td><td rowspan="1">1687634934419</td><td rowspan="1">3916</td></tr><tr class="failedodd"><td rowspan="1">grid.gridd01</td><td><a href="#m1">hkk</a></td><td rowspan="1">1687634932427</td><td rowspan="1">1963</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">grid.Grid1</td><td><a href="#m0">hk</a></td><td rowspan="1">1692183970815</td><td rowspan="1">996</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">grid.Grid1#hk</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_RESET
-  (Session info: chrome=114.0.5735.134)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
-System info: host: &apos;DESKTOP-LCVNK92&apos;, ip: &apos;192.168.1.148&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:58094}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: cfe2fdc67bd3f90acadf87ceb9d...}
-Session ID: cfe2fdc67bd3f90acadf87ceb9da1a43
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-	at grid.Grid1.hk(Grid1.java:31)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">grid.gridd01#hkk</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Unable to create new service: GeckoDriverService
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
-System info: host: &apos;DESKTOP-LCVNK92&apos;, ip: &apos;192.168.1.148&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16.1&apos;
-Driver info: driver.version: unknown
-Command duration or timeout: 481 milliseconds
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$errorHandler$0(JsonWireProtocolResponse.java:54)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
-	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
-	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+<h2>Default test</h2><h3 id="m0">grid.Grid1#hk</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: Unable to parse remote response: &lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/assets/displayhelpservlet.css&quot; media=&quot;all&quot;/&gt;
+  &lt;link href=&quot;/assets/favicon.ico&quot; rel=&quot;icon&quot; type=&quot;image/x-icon&quot; /&gt;
+  &lt;script src=&quot;/assets/jquery-3.1.1.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+  &lt;script src=&quot;/assets/displayhelpservlet.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+  &lt;script type=&quot;text/javascript&quot;&gt;
+    var json = Object.freeze(&apos;{&quot;consoleLink&quot;: &quot;\u002fgrid\u002fconsole&quot;,&quot;type&quot;: &quot;Grid Hub&quot;,&quot;class&quot;: &quot;org.openqa.grid.web.servlet.DisplayHelpHandler$DisplayHelpServletConfig&quot;,&quot;version&quot;: &quot;3.141.59&quot;}&apos;);
+  &lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;div id=&quot;content&quot;&gt;
+  &lt;div id=&quot;help-heading&quot;&gt;
+    &lt;h1&gt;&lt;span id=&quot;logo&quot;&gt;&lt;/span&gt;&lt;/h1&gt;
+    &lt;h2&gt;Selenium &lt;span class=&quot;se-type&quot;&gt;&lt;/span&gt;&amp;nbsp;v.&lt;span class=&quot;se-version&quot;&gt;&lt;/span&gt;&lt;/h2&gt;
+  &lt;/div&gt;
+
+  &lt;div id=&quot;content-body&quot;&gt;
+    &lt;p&gt;
+      Whoops! The URL specified routes to this help page.
+    &lt;/p&gt;
+    &lt;p&gt;
+      For more information about Selenium &lt;span class=&quot;se-type&quot;&gt;&lt;/span&gt; please see the
+      &lt;a class=&quot;se-docs&quot;&gt;docs&lt;/a&gt; and/or visit the &lt;a class=&quot;se-wiki&quot;&gt;wiki&lt;/a&gt;.
+      &lt;span id=&quot;console-item&quot;&gt;
+        Or perhaps you are looking for the Selenium &lt;span class=&quot;se-type&quot;&gt;&lt;/span&gt; &lt;a class=&quot;se-console&quot;&gt;console&lt;/a&gt;.
+      &lt;/span&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+      Happy Testing!
+    &lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;div&gt;
+    &lt;footer id=&quot;help-footer&quot;&gt;
+      Selenium is made possible through the efforts of our open source community, contributions from
+      these &lt;a href=&quot;https://github.com/SeleniumHQ/selenium/blob/master/AUTHORS&quot;&gt;people&lt;/a&gt;, and our
+      &lt;a href=&quot;http://www.seleniumhq.org/sponsors/&quot;&gt;sponsors&lt;/a&gt;.
+   &lt;/footer&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:115)
 	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
 	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
 	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:144)
-	at grid.gridd01.hkk(gridd01.java:22)
+	at grid.Grid1.hk(Grid1.java:27)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: org.openqa.selenium.SessionNotCreatedException: Unable to create new service: GeckoDriverService
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
-System info: host: &apos;DESKTOP-LCVNK92&apos;, ip: &apos;192.168.1.148&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16.1&apos;
-Driver info: driver.version: unknown
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.json.JsonException: Unable to determine type from: &lt;. Last 1 characters read: &lt;
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
 System info: host: &apos;DESKTOP-LCVNK92&apos;, ip: &apos;192.168.1.148&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.grid.session.remote.ServicedSession$Factory.lambda$get$0(ServicedSession.java:135)
-	at org.openqa.selenium.grid.session.remote.ServicedSession$Factory.apply(ServicedSession.java:152)
-	at org.openqa.selenium.remote.server.ActiveSessionFactory.lambda$apply$12(ActiveSessionFactory.java:180)
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.util.stream.ReferencePipeline$11$1.accept(ReferencePipeline.java:442)
-	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177)
-	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
-	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
-	at org.openqa.selenium.remote.server.ActiveSessionFactory.apply(ActiveSessionFactory.java:183)
-	at org.openqa.selenium.remote.server.NewSessionPipeline.lambda$null$2(NewSessionPipeline.java:66)
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177)
-	at java.util.Collections$2.tryAdvance(Collections.java:4747)
-	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
-	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
-	at org.openqa.selenium.remote.server.NewSessionPipeline.lambda$createNewSession$3(NewSessionPipeline.java:69)
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.util.stream.DistinctOps$1$2.accept(DistinctOps.java:175)
-	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177)
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177)
-	at java.util.stream.Streams$StreamBuilderImpl.tryAdvance(Streams.java:397)
-	at java.util.stream.Streams$ConcatSpliterator.tryAdvance(Streams.java:720)
-	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
-	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
-	at org.openqa.selenium.remote.server.NewSessionPipeline.createNewSession(NewSessionPipeline.java:72)
-	at org.openqa.selenium.remote.server.commandhandler.BeginSession.execute(BeginSession.java:65)
-	at org.openqa.selenium.remote.server.WebDriverServlet.lambda$handle$0(WebDriverServlet.java:235)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.lang.Thread.run(Thread.java:834)
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.json.JsonInput.peek(JsonInput.java:122)
+	at org.openqa.selenium.json.JsonTypeCoercer.lambda$null$6(JsonTypeCoercer.java:140)
+	at org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:126)
+	at org.openqa.selenium.json.Json.toType(Json.java:69)
+	at org.openqa.selenium.json.Json.toType(Json.java:55)
+	at org.openqa.selenium.json.Json.toType(Json.java:50)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:112)
+	... 35 more
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -22,13 +22,14 @@ public void hk() throws MalformedURLException {
 	DesiredCapabilities cap = new DesiredCapabilities();
 	cap.setBrowserName("chrome");
 	//cap.setPlatform(Platform.WIN10);
-	
-	WebDriver driver = new RemoteWebDriver(new URL("http://192.168.1.148:7777/wd/hub"),cap);
+	//cap.setCapability(CapabilityType.BROWSER_NAME, "firefox");
+	//cap.setCapability(CapabilityType.BROWSER_NAME, "chrome");
+	WebDriver driver = new RemoteWebDriver(new URL("http://192.168.1.148:5555"),cap);
 
 	driver.manage().window().maximize();
 	
 	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-	driver.get("https://www.porn.com/");
+	driver.get("https://www.google.com/");
 
 		
 	}
